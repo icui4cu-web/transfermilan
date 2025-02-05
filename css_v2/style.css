@@ -1,0 +1,1818 @@
+﻿/* 24-12-2024 https://www.toptal.com/developers/cssminifier */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-dropdown-list {
+	position: relative;
+}
+p.ui-dropdown-list-trigger {
+	margin-top: -8px;
+}
+.ui-dropdown-list-trigger strong {
+	position: relative;
+	z-index: 999;
+}
+.ui-dropdown-list-trigger strong:after {
+	display: block;
+	position: absolute;
+	content: '';
+	right: 5px;
+	top: 10px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #ccc;
+}
+.ui-dropdown-list-trigger strong, .ui-dropdown-list ul a {
+	display: block;
+	width: 120px;
+	cursor: pointer;
+	padding: 6px 8px 6px 10px;
+	font-size: 13px;
+	line-height: 13px;
+	color: #ccc;
+	font-weight: normal;
+	background: #222;
+}
+.ui-dropdown-list ul {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 25px;
+	margin-top: 0;
+	padding: 0;
+	z-index: 1000;
+}
+.ui-dropdown-list li {
+	list-style-type: none;
+}
+.ui-dropdown-list ul a, .ui-dropdown-list ul a:link, .ui-dropdown-list ul a:visited {
+	position: relative;
+	display: block;
+	float: right;
+	background-color: #333;
+}
+.ui-dropdown-list ul a:hover, .ui-dropdown-list ul a:focus {
+	border-bottom: none;
+	background-color: #009AFF;
+	color: #fff;
+}
+/* JS interactivity */
+.no-js .ui-dropdown-list ul, .ui-dropdown-list.active ul {
+	display: block;
+}
+.ui-dropdown-list.active strong {
+	background-color: #999;
+	color: #fff;
+}
+.ui-dropdown-list.active strong:after {
+	border-top-color: #fff;
+}
+#lang-switcher a {
+	padding-left: 40px;
+}
+
+#lang-switcher a, #lang-switcher strong {
+	background-repeat: no-repeat;
+	background-position: 8px center;
+}
+#lang-switcher a.it, #lang-switcher .it strong {background-image: url(//www.transfermilan.com/images/flags/it.png);}
+#lang-switcher a.en, #lang-switcher .en strong {background-image: url(//www.transfermilan.com/images/flags/en.png);}
+#lang-switcher a.ar, #lang-switcher .ar strong {background-image: url(//www.transfermilan.com/images/flags/ar.png);}
+#lang-switcher a.bg, #lang-switcher .bg strong {background-image: url(//www.transfermilan.com/images/flags/bg.png);}
+#lang-switcher a.nl, #lang-switcher .nl strong {background-image: url(//www.transfermilan.com/images/flags/nl.png);}
+#lang-switcher a.hu, #lang-switcher .hu strong {background-image: url(//www.transfermilan.com/images/flags/hu.png);}
+#lang-switcher a.fr, #lang-switcher .fr strong {background-image: url(//www.transfermilan.com/images/flags/fr.png);}
+#lang-switcher a.de, #lang-switcher .de strong {background-image: url(//www.transfermilan.com/images/flags/de.png);}
+#lang-switcher a.el, #lang-switcher .el strong {background-image: url(//www.transfermilan.com/images/flags/el.png);}
+#lang-switcher a.pl, #lang-switcher .pl strong {background-image: url(//www.transfermilan.com/images/flags/pl.png);}
+#lang-switcher a.pt, #lang-switcher .pt strong {background-image: url(//www.transfermilan.com/images/flags/pt.png);}
+#lang-switcher a.ro, #lang-switcher .ro strong {background-image: url(//www.transfermilan.com/images/flags/ro.png);}
+#lang-switcher a.ru, #lang-switcher .ru strong {background-image: url(//www.transfermilan.com/images/flags/ru.png);}
+#lang-switcher a.es, #lang-switcher .es strong {background-image: url(//www.transfermilan.com/images/flags/es.png);}
+#lang-switcher a.ja, #lang-switcher .ja strong {background-image: url(//www.transfermilan.com/images/flags/ja.png);}
+#lang-switcher a.lt, #lang-switcher .lt strong {background-image: url(//www.transfermilan.com/images/flags/lt.png);}
+#lang-switcher a.cs, #lang-switcher .cs strong {background-image: url(//www.transfermilan.com/images/flags/cs.png);}
+#lang-switcher a.da, #lang-switcher .da strong {background-image: url(//www.transfermilan.com/images/flags/da.png);}
+#lang-switcher a.no, #lang-switcher .no strong {background-image: url(//www.transfermilan.com/images/flags/no.png);}
+#lang-switcher a.sk, #lang-switcher .sk strong {background-image: url(//www.transfermilan.com/images/flags/sk.png);}
+#lang-switcher a.fi, #lang-switcher .fi strong {background-image: url(//www.transfermilan.com/images/flags/fi.png);}
+#lang-switcher a.tr, #lang-switcher .tr strong {background-image: url(//www.transfermilan.com/images/flags/tr.png);}
+#lang-switcher a.zh, #lang-switcher .zh strong {background-image: url(//www.transfermilan.com/images/flags/zh.png);}
+#lang-switcher a.sv, #lang-switcher .sv strong {background-image: url(//www.transfermilan.com/images/flags/sv.png);}
+#lang-switcher a.iw, #lang-switcher .iw strong {background-image: url(//www.transfermilan.com/images/flags/iw.png);}
+#lang-switcher a.hi, #lang-switcher .hi strong {background-image: url(//www.transfermilan.com/images/flags/hi.png);}
+
+
+#lang-switcher strong {
+	float: right;
+}
+
+/* body */
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	position: relative;
+	background-color: #f7f7f7;
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.blogTitle{color:#333; font-weight:600; font-size: 16px;}
+a.blogTitle:hover{color:#000;}
+div.blogAuthor {color:#999}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.page {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1080px;
+	width: 95%;
+}
+.first {
+	margin-top: -160px;
+}
+.widget {
+	margin-top: 0px;
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+ul, li {
+	list-style-type: none;
+	font-size: 100%;
+	line-height: 1.5;
+	list-style: none;
+}
+.title_line {
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+.title {
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+	padding: 10px 0;
+	border-bottom: 0;
+}
+.white {
+	color: #FFF !important;
+}
+.black {
+	color: #333 !important;
+}
+.title2 {
+	font-weight: 900;
+	font-size: 28px;
+	color: #333;
+	padding: 10px 0 0;
+	margin: 20px 0 0;
+	text-align: center;
+}
+.title2 h2 {font-size: 28px; margin:0; text-transform:uppercase}
+.title2 h3 {font-size: 22px; margin:0; text-transform:uppercase}
+.title2 h2.tUp {text-transform:uppercase}
+
+.pd10 {
+	padding: 0px 10px 10px 10px;
+}
+.pd30 {
+	padding: 0 30px;
+}
+.pd10_1 {
+	padding: 0 10px;
+}
+.pdv10 {
+	padding: 10px 0;
+}
+.pdv30 {
+	padding: 30px 0;
+}
+.breadcrumbs {
+	overflow: hidden;
+	max-width: 1080px;
+	width: 95%;
+	transform: translateX(-50%);
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+}
+a.btn {
+	display: block;
+	width: 150px;
+	height: 40px;
+	margin: 20px 0;
+	float: right;
+	line-height: 40px;
+	color: #333;
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn:hover {
+	background-color: #eee;
+}
+a.btn2 {
+	display: block;
+	width: 150px; /*120px;*/
+	height: 35px;
+	margin: 5px 0;
+	float: right;
+	line-height: 35px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn3 {
+	display: block;
+	width: 200px; /*160px;*/
+	height: 38px;
+	margin: 5px auto;
+	line-height: 38px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn4 {
+	display: block;
+	clear: both;
+	width: 200px; /*150*/
+	height: 25px;
+	margin: 20px auto 20px;
+	line-height: 25px;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #333;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn5 {
+	display: block;
+	clear: both;
+	width: 150px;
+	height: 25px;
+	margin: 20px auto 20px;
+	line-height: 25px;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn6 {
+	display: block;
+	width: auto;
+	height: 45px;
+	margin: 15px;
+	line-height: 45px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn6:hover {
+	background-color: #2C2C2C;
+	color:#CCC;
+}
+a.btn7 {
+	display: block;
+	width: 150px; /*120px;*/
+	height: 35px;
+	margin: 5px 0;
+	float: right;
+	line-height: 35px;
+	background-color: #12a730;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+a.btn7:hover {
+	background-color: #108F29;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #333;
+	text-align: center;
+}
+p b {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #666;
+	text-align: center;
+}
+.row {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+fieldset {
+	position: relative;
+	border: none;
+	margin: 0;
+	padding: 5px 0;
+}
+label {
+	color: #fff;
+	font-size: 14px;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	outline: 0;
+}
+fieldset {
+	border: 0;
+}
+label, select, .ui-select-menu {
+	float: left;
+	margin-right: 10px;
+}
+/*select { width: 200px; }*/ 
+.wrap span.ui-selectmenu-item-header, .wrap ul.ui-selectmenu-menu li a {
+	text-decoration: underline !important;
+}
+/* duke */
+p.Lh4 {font-size:18px;color:#000; font-weight:bold}
+p.Lh3 {font-size:28px;color:#000; font-weight:bold}
+div.mb20 {margin-bottom:20px}
+a.cEmail { color:#000}
+
+
+div.message_block {width:auto; border:1px solid #ccc; /*background:#CCC;*/ padding:10px 20px; margin-top:15px; color:#FFF}
+div.message_block img {float:left; padding-right:10px}
+
+div.message_block .inner {
+	padding: 0px;
+}
+div.message_block .links { 
+	margin: 10px 0 20px 30px;
+}
+div.message_block .links .link {
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #EAEAEA;
+	width:auto;
+	padding:5px 7px 5px 7px;
+	margin-right: 15px; 
+}
+
+.tACenter { text-align:center}
+.white2 {color:#666}
+.white3 {color: #333;background-color: #dedede;padding:20px 10px;}
+.mFooter {text-transform:uppercase}
+
+.title5 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    padding: 0;
+    border-bottom: 0;
+}
+
+ul.fleetcompact em {font-size:12px}
+div.page_content > p > b {color:#000}
+div.page_content > p > span.style1 { color:#000 }
+
+input, textarea, select {
+	font-size: 1.1em;
+}
+select {
+	height: 40px;
+	width: 100%;
+	padding: 0px 5px;
+	line-height: 40px;
+	color: #fff;
+	border: 1px solid #fff;
+	background: #666;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
+}
+#city_from_filds, #airport_from_filds, #city_to_filds, #loading_direction_to, #loading_direction_from, .loading_from, .loading_to {
+	display: none
+}
+
+span.info_msg > em {color:#F00}
+span.redstar {color:#F00; font-weight:bold}
+div.info_box {border:1px #333 solid; width:100%; padding:10px 20px;}
+input#security_code { width:100px}
+img.captcha {padding:0 15px 0 0; margin:0; float: left}
+form#bookingForm img.revert  {
+	padding: 30px 0 0 0 !important;
+}
+img.loading {float:left; margin-right:7px}
+
+/* autocomplete */
+.ui-menu {
+        list-style:none;
+        padding: 10px;
+        margin: 0;
+        display:block;
+        width:227px;
+}
+.ui-menu .ui-menu-item {
+	border-bottom: 1px #FFFFFF solid;
+	padding:5px 0;
+}
+.ui-menu-item .ui-state-hover, .ui-menu-item .ui-state-active {
+      color: #000;
+      text-decoration: none;
+      background-color: #666;
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      background-image: none;
+}
+/* duke:end*/
+
+input[type="text"] {
+	height: 40px;
+	width: 100%;
+	padding: 10px 5px;
+	line-height: 40px;
+	color: #fff;
+	border: 1px solid #fff;
+	background: #666;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
+}
+input[type="text"]::placeholder {
+ color: #fff;
+}
+input[type=text].error, select.error {
+	border: 1px solid red;
+}
+label.error {
+	color: red;
+}
+textarea {
+	color: #fff;
+	border: 1px solid #fff;
+	_background-color: rgb(255, 255, 255, 0.4);
+	background: #666;
+	padding: 10px 5px;
+	width: 100%;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
+}
+span.icon-point {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-point.svg) no-repeat;
+}
+span.icon-arrow {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-select.svg) no-repeat;
+}
+span.icon-date {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 2px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-calendar.svg) no-repeat;
+}
+span.icon-time {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 4px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-time.svg) no-repeat;
+}
+span.icon-people {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 4px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-people.svg) no-repeat;
+}
+span.icon-luggage {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 4px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-luggage.svg) no-repeat;
+}
+span.icon-edit {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 2px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-edit.svg) no-repeat;
+}
+span.icon-phone {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 4px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-tel.svg) no-repeat;
+}
+span.icon-mail {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 4px;
+	top: 12px;
+	background: url(//www.transfermilan.com/img/icon-mail.svg) no-repeat;
+}
+hr {
+	width: 100%;
+	height: 1px;
+	background-color: #ddd;
+	margin: 20px auto;
+	border: 0;
+}
+/* UI THEME START*/
+label, select {
+	float: none;
+	margin-right: 0;
+	text-align: left;
+}
+.ui-selectmenu-menu-item-header {
+	display: block;
+	font-weight: bold;
+}
+.ui-selectmenu-menu-item-content {
+	display: block;
+}
+.ui-selectmenu-button.ui-button {
+	text-align: left;
+	white-space: nowrap;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #fff;
+	padding: 0 5px;
+}
+/* UI THEME END */
+
+/* HEADER START */
+.header {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.header.small {
+	overflow: hidden;
+	position: relative;
+	height: 350px;
+	width: 100%;
+}
+.header .menu {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 999999;
+	right: 0;
+	display: block;
+}
+.header .menu-cont {
+	background-color: rgba(0, 0, 0, 0.5);
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 150px;
+}
+.header .menu-cont a.logo {
+	float: left;
+	margin-left: 0px;
+	position: absolute;
+	padding: 6px 4px 4px;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 70px;
+	display: block;
+	/*background-color: #333;*/
+}
+.header .menu-cont a.icon-nav {
+	display: none;
+	float: right;
+	width: 62px;
+	color: #FFF;
+	font-size: 36px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #333;
+	text-align: right;
+	line-height: 54px;
+	z-index: 10;
+}
+.header a.icon-nav-close {
+	display: none;
+	float: right;
+	width: 62px;
+	color: #FFF;
+	font-size: 32px;
+	position: absolute;
+	top: 15px;
+	right: 5px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #333;
+	text-align: right;
+	line-height: 54px;
+	text-align: right;
+	z-index: 20;
+}
+.header .menu-info {
+	float: right;
+	display: block;
+	width: 100%;
+}
+.header .menu-info .social-content {
+	overflow: hidden;
+	color: #d9d9d9;
+}
+.header .menu-info .contact-det {
+	float: right;
+	padding: 6px 0;
+}
+.header .menu-info .contact-det ul {
+	margin: 3px 8px 0 0; 
+	float: left;
+	padding: 0;
+	width: 160px;
+}
+.header .menu-info .contact-det ul li {
+	display: block;
+	float: left;
+	line-height: 14px;
+	color: #fff;
+}
+.header .menu-info .contact-det ul li span.small {
+	font-size: 12px;
+	color: #eee;
+	line-height: 14px;
+}
+.header .menu-info .contact-det ul li:first-child a {
+	padding-left: 0;
+}
+.header .menu-info .contact-det ul li a {
+	font-size: 18px;
+	color: #fff;
+	padding: 0 12px 0 8px;
+}
+.header .menu-info .social-det {
+	display: block;
+	float: right;
+	padding: 6px 0;
+}
+.header .menu-info .social-det ul {
+	float: left;
+	margin: 0 8px;
+	padding: 0;
+	width: 80px;
+}
+.header .menu-info .social-det ul li {
+	display: block;
+	float: left;
+	margin-left: 9px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 14px;
+}
+@keyframes showNav {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.header .navbar-mobile {
+	display: none;
+	overflow: hidden;
+	height: 260px; /*224*/
+	animation: showNav 250ms ease-in-out both;
+}
+.header .navbar-mobile ul {
+	float: unset;
+	position: absolute;
+	z-index: 20;
+	border-top: 6px solid #333;
+	background: #333;
+	top: 70px;
+	left: 0;
+	right: 0;
+	overflow-y: scroll;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.header .navbar-mobile ul>li {
+	float: none;
+	padding: 10px;
+	display: block;
+	line-height: none; /* auto */
+	background: #fff;
+	color: #333;
+	font-size: 18px;
+	font-weight: 500;
+	border-bottom: 2px solid #9e9e9e;
+	position: relative;
+}
+.header .navbar-mobile ul>li.active {
+	color: #00ccff;
+}
+.header .navbar-mobile ul>li a {
+	color: #333;
+	font-size: 18px;
+	font-weight: 500;
+}
+.header .navbar-mobile ul>li.active a {
+	color: #333;
+}
+.header .navbar {
+	position: relative;
+	min-height: 42px;
+	margin-bottom: 0px;
+	border: 1px solid transparent;
+	border-top: 1px solid #f5efec;
+}
+.header .navigation {
+	float: left;
+}
+.header .navbar > ul {
+	margin: 0;
+}
+.header .navigation > li.active a, .header .navigation > li.active a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.header .navigation > li:first-child {
+	padding-left: 2px;
+}
+.header .navigation > li {
+	float: left;
+	position: relative;
+	padding: 14px 28px 14px 13px;
+	line-height: 12px;
+	position: relative;
+	color: #ddd;
+}
+.header .navigation > li a {
+	color: #ddd;
+}
+.header .navigation > li a:hover {
+	text-decoration: underline;
+}
+.header .hero-image {
+	background: url(//www.transfermilan.com/img/header-image.webp);
+	background-color: rgba(0,0,0,0.50);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.header .hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 18px;
+}
+.header .hero-text h1 {
+	font-weight: 900;
+	font-size: 48px;
+}
+/* HEADER END */
+
+/* BOOKING & PRICING START */
+.sez_booking {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background-color: transparent;
+}
+.sez_booking.first .booking {
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+	min-height: 200px;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #000000);
+	box-shadow: inset 0 -2px 0 0 #cccccc;
+	background-color: transparent;
+}
+.sez_booking .booking {
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+	min-height: 200px;
+	background-color: #000;
+}
+.sez_booking .form {
+	color: #fff;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.sez_booking .cl1 {
+	width: 35%;
+	min-height: 10px;
+	float: left;
+}
+.sez_booking .cl2 {
+	width: 6%;
+	min-height: 10px;
+	float: left;
+	text-align: center; /*do 16-04-2019 bil zakommentirovan*/
+}
+.sez_booking .cl3 {
+	width: 35%;
+	min-height: 10px;
+	float: left;
+}
+.sez_booking .cl4 {
+	width: 24%;
+	min-height: 10px;
+	float: left;
+}
+.sez_booking .table {
+	color: #666;
+	font-size: 14px;
+	width: 680px;
+	margin: 30px auto;
+}
+.sez_booking .table .row {
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 3px 10px;
+	width: 100%;
+	clear: both;
+}
+.sez_booking .table .row:last-child {
+	border-bottom: 1px solid #ccc;
+}
+.sez_booking .table .row .cell {
+	border-left: 1px solid #ccc;
+	float: left;
+	padding: 10px;
+}
+.sez_booking .table .row .cell:first-child {
+	border-left: none;
+}
+.sez_booking .table .row .cl1 {
+	width: 70px;
+}
+.sez_booking .table .row .cl2 {
+	width: 300px;
+	line-height:20px;
+}
+.sez_booking .table .row .cl3 {
+	width: 170px;
+	line-height:20px;
+}
+.sez_booking .table .row .cl4 {
+	width: 150px;
+	padding: 0 0px !important;
+}
+.sez_booking .table .row .cl3 b {font-size:22px; color:#000; font-weight:500}
+.sez_booking .table .row .cl3 b.ski_sea {font-size:22px; color:#1a4e91; font-weight:500}
+del.skiPage {font-size:18px;}
+
+/* BOOKING & PRICING END */
+
+/* BANNER RESORT START */
+.sez_banner {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+div.sez_banner.bSea {
+	background: url("//www.transfermilan.com/img/bg-se.webp") no-repeat top center;
+	height: 260px;
+}
+div.sez_banner.bSki {
+	background: url("//www.transfermilan.com/img/bg_ski_banner.webp") no-repeat top center;
+	height: 340px;
+}
+
+div.sez_banner.bSki h3, div.sez_banner.bSki p { color:#000; }
+div.sez_banner.bSki p.Lh3 {font-size:24px;color:#000; font-weight:bold}
+
+.sez_banner .text {
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 18px;
+}
+.sez_banner .text p {
+	font-size: 18px;
+	color: #fff;
+}
+.sez_banner .text h3 {
+	font-weight: 900;
+	margin-bottom: -10px;
+	font-size: 28px;
+	color: #fff;
+}
+/* BANNER RESORT END */
+
+/* FLEET START */
+.sez_fleet {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.sez_fleet ul {
+	margin: 20px auto 0px; /*margin: 20px auto 50px;*/
+}
+.sez_fleet ul li {
+	width: 30%;
+	border: 1px solid #d9d9d9;
+	background-color: #FFF;
+	display: inline-block;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+
+.sez_fleet ul li:hover { 
+	border: 1px solid #333;
+}
+
+.sez_fleet ul li:last-child {
+	margin-right: 0;
+}
+.sez_fleet ul li:nth-child(3) {
+	margin-right: 0;
+}
+.sez_fleet .slick-slider ul {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.sez_fleet .slick-slider li {
+	width: 30%;
+	margin-right: 20px;
+}
+.sez_fleet .slick-slider li:nth-child(3) {
+	margin-right: 20px;
+}
+.sez_fleet ul li .row {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	text-align: center;
+}
+.sez_fleet ul li .row .cell50 {
+	width: 49%;
+	float: left;
+	border-top: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	padding: 5px;
+}
+.sez_fleet ul li .row .cell50:last-child {
+	border-right: none;
+}
+.sez_fleet ul li .row .cell100 {
+	width: 100%;
+	float: left;
+	border: 15px solid #fff;
+	padding: 10px 5px;
+	text-align: center;
+	background-color: #333;
+	color: #FFF;
+}
+.sez_fleet ul li .row .cell101 {
+	width: 100%;
+	float: left;
+	border-top: 1px solid #d9d9d9;
+	padding: 5px;
+	text-align: center;
+}
+.sez_fleet ul li .row .cell102 {
+	width: 100%;
+	
+}
+.sez_fleet ul li .row .cell101 b {
+	font-size:24px;
+}
+
+/* duke */
+
+/* privacy-banner */
+* {box-sizing: border-box;}
+.privacy-banner {position: fixed; bottom: 0; left: 0; width: 100%; max-width: 100%; padding: 1rem .5rem; background: #fff; z-index: 1030; color: #000; font-size: 14px; margin: 0; border-top: 2px solid #ff910e;}
+.banner-wrapper {max-width: 1200px; width: 100%; margin: 0 auto; display: flex; position: relative; align-items: center;}
+.privacy-banner p {margin: 0; color: #000; text-align: center; }
+.privacy-banner .banner-wrapper p {padding-right: 3rem;}
+.privacy-banner a { text-decoration: none; margin: 0 0 0 20px; display: inline-block; max-width: 150px; }
+.privacy-banner a:hover { text-decoration: underline; }
+.privacy-banner button {position: absolute; right: 5px; top: calc(50% - 12.5px); color: #fff; outline: 0; height: 25px; width: 25px; border: 0; display: flex; align-items: center; justify-content: center;    font-size: 1.35rem; font-weight: 700; border-radius: 50%; text-align: center; padding: 0; line-height: 1; background: #000; cursor: pointer; }
+.banner-learn { color: #000;}
+.banner-accept,.banner-decline { padding: 7px 15px; color: #fff; border-radius: 5px; background: #000;}
+  
+
+/* trensform from style.min.css 13-10-2024 */
+.message_block_info{
+	background-color:#333; /* замена 05-12-2024 с eaeaea */
+	border:1px solid #b1b1b1;
+}
+.message_block_error{
+	background-color:#ffdfdf;
+	border:1px solid #ffacac;
+}
+
+.message_block .message{
+	padding:0 0 25px 0;
+}
+.message_block .inner {
+	padding: 16px 15px 25px 19px;
+}
+.message_block .wrapper {
+	width: 100%;
+}
+.message_block img {
+	float:left; 
+	margin-right:15px; 
+	margin-bottom:20px;
+}
+.message_block .links { 
+	margin-left: 35px;
+}
+.message_block .links .link {
+	/*background: url(../images/arrow.png) no-repeat 0% -17px;*/
+	/*margen:0 20px 0 20px;*/
+	background: url(../images/tab-bg.gif); 
+	color: #FFF;
+	border: 1px solid #EAEAEA;
+	/*margin: 0;*/
+	width:auto;
+	padding:5px 7px 5px 7px;
+	margin-right: 15px; 
+	/*height: 30px;*/
+}
+.message_block a {
+	text-decoration: none;
+}
+/* trensform from style.min.css 13-10-2024:END */
+
+/* routes*/
+ol.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ol.breadcrumb li {
+    display: inline;
+}
+ol.breadcrumb li a {color:#999}
+
+/*ol.breadcrumb li a.first:before{
+	content: url(img/home-breadcrumps-icn.svg);
+	width: 16px;
+	height: 16px;
+}*/
+
+/* routes:end */
+.sez_fleet ul li .row .cell50 img { 
+	vertical-align: middle;
+    margin: -4px 5px 0 0;
+	display:inline}
+.cell50 img {
+	/*float: left;*/
+	vertical-align: middle;
+	margin: -4px 5px 0 0;
+}
+div.cell50 > span {display: block}
+div.footer_menu_l1 {border-bottom:1px #666666 solid; margin-bottom:7px}
+div.footer_menu_l2 {height:28px}
+div.footer_menu_l2 > div {line-height:28px}
+div.footer_menu_l2 > div > span {
+	background-repeat:no-repeat; padding-left:23px; margin-left:10px; display: inline-block;  height: 25px; line-height:16px
+}
+span.phone { background-image: url("//www.transfermilan.com/img/phone-16.png")}
+span.email { background-image: url("//www.transfermilan.com/img/email-16.png")}
+span.whatsapp { background-image: url("//www.transfermilan.com/img/whatsapp-16.png")}
+/* FLEET END */
+
+/* OUR SERVICES START*/
+.sez_services {
+	width: 100%;
+	background: #000 url("//www.transfermilan.com/img/merc-bg.webp") no-repeat top center;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.sez_services ul {
+	/*margin: 50px auto 70px;*/
+}
+.sez_services ul li {
+	width: 30%;
+	display: inline-block;
+	margin-right: 4%;
+	color: #FFF;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 20px;
+}
+.sez_services ul li:last-child {
+	margin-right: 0;
+}
+.sez_services ul li .row {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+/* OUR SERVICES END */
+
+/* COMMENTS START*/
+.sez_comments {
+	width: 100%;
+	background: transparent;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.sez_comments ul {
+	margin: 30px auto 30px;
+}
+.sez_comments ul li {
+	width: 30%;
+	display: inline-block;
+	margin-right: 4%;
+	color: #333;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 20px;
+}
+.sez_comments ul li:last-child {
+	margin-right: 0;
+}
+.sez_comments ul li .row {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+/* COMMENTS END */
+
+
+
+/* FOOTER START*/
+.sez_footer {
+	width: 100%;
+	background-color: #000;
+	color: #ddd;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 12px;
+}
+.sez_footer .cont {
+	width: 520px; /*420*/
+	height: 32px;
+	margin: 0 auto;
+	overflow: hidden;
+	display:inline-block;
+	clear: both;
+}
+.sez_footer .cc_payment, .app_icons { width: 250px; display:inline-block; text-align: right;}
+.cc_payment > ul > li {
+	display:inline-block;
+}
+.sez_footer a.menu.last { padding-right:0;}
+.sez_footer a.menu, .sez_footer a.menu:hover {
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+	position: relative;
+	padding: 14px 20px 14px 0;
+	position: relative;
+	display: block;
+	float: left;
+}
+.sez_footer .left {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.sez_footer .right {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+/* FOOTER END*/
+
+/* ROUTES START*/
+.sez_routes {
+	width: 100%;
+	background-color: transparent;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding: 20px 0;
+}
+#routes {
+	width: 100%;
+	overflow: hidden;
+}
+#routes .country {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+	padding: 10px 0px;
+}
+#routes div a {
+	color: #000;
+}
+#routes div a:hover {
+	text-decoration: underline;
+}
+a.importent {
+	color: #CC0000!important;
+	font-weight: 800;
+}
+#routes div h5 {
+	font-weight: normal;
+	font-size: 1em; /*75%;*/
+	text-decoration: none;
+	color: #4f4e4e;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+#routes .heading {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333;
+	cursor: pointer;
+	position: relative;
+	border: solid 1px #dddddd;
+	padding: 10px 40px;
+}
+#routes .on {
+	background: url("//www.transfermilan.com/img/accordion-expand-btn.svg") no-repeat;
+	background-position: 10px center;
+	min-height: 28px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+#routes .open {
+	background: url("//www.transfermilan.com/img/accordion-collapse-btn.svg") no-repeat;
+	background-position: 10px center;
+	min-height: 28px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+#routes .content {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	font-size: 16px;
+	color: #666;
+	display: none;
+	border: solid 1px #dddddd;
+	border-top: none;
+}
+/* ROUTES END*/
+
+/* CAR CATEGORY START*/
+.sez_carcategory {
+	width: 100%;
+	background: #000 url("//www.transfermilan.com/img/merc-bg.webp") no-repeat top center;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.sez_carcategory ul {
+	margin: 50px auto 70px;
+}
+.sez_carcategory ul li {
+	width: 30%;
+	display: inline-block;
+	margin-right: 4%;
+	margin-top: 20px;
+	color: #FFF;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 20px;
+	border: 1px solid #FFF;
+}
+.sez_carcategory ul li:last-child {
+	margin-right: 0;
+}
+.sez_carcategory ul li:nth-child(3) {
+	margin-right: 0;
+}
+.sez_carcategory ul li .row {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+.sez_carcategory .box {
+	width: 160px;
+	overflow: hidden;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 30px;
+	margin: 20px auto;
+}
+.sez_carcategory .row.row1 {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.sez_carcategory .row.row2 {
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 -1px 0 0 #dddddd, inset 0 1px 0 0 #dddddd;
+}
+.sez_carcategory .box .cl1 {
+	width: 60px;
+	float: left;
+}
+.sez_carcategory .box .cl2 {
+	width: 50px;
+	float: left;
+}
+.sez_carcategory .box .cl3 {
+	width: 50px;
+	float: left;
+}
+/* CAR CATEORY END */
+
+/* ORDER START */
+.sez_order {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background-color: transparent;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.sez_order .order {
+	overflow: hidden;
+	width: 100%;
+	padding: 20px 20px 10px;
+	_background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #000000);
+	_box-shadow: inset 0 -2px 0 0 #cccccc;
+	background-color: #000;
+}
+.sez_order .order2 {
+	background-color: #000;
+	overflow: hidden;
+	width: 100%;
+	padding: 0 20px 20px;
+	box-shadow: inset 0 -2px 0 0 #cccccc;
+}
+.sez_order .form {
+	color: #fff;
+	font-size: 14px;
+}
+.sez_order .form .row {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.sez_order .cl1-1 {
+	width: 100%;
+	min-height: 10px;
+	float: left;
+}
+.sez_order .cl1-4 {
+	width: 34%;
+	min-height: 10px;
+	float: left;
+	margin-right: 1%;
+}
+.sez_order .cl2-4 {
+	width: 5%;
+	min-height: 10px;
+	float: left;
+	text-align: center;
+	margin-right: 1%;
+}
+.sez_order .cl3-4 {
+	width: 34%;
+	min-height: 10px;
+	float: left;
+	margin-right: 1%;
+}
+.sez_order .cl4-4 {
+	width: 23%;
+	min-height: 10px;
+	float: left;
+	margin-left: 1%;
+}
+.sez_order .cl1-2 {
+	width: 49%;
+	min-height: 10px;
+	float: left;
+	margin-right: 1%;
+}
+.sez_order .cl2-2 {
+	width: 49%;
+	min-height: 10px;
+	float: left;
+	margin-left: 1%;
+}
+.sez_order .cl1-3 {
+	width: 33%;
+	min-height: 10px;
+	float: left;
+	margin-right: 1%;
+}
+.sez_order .cl2-3 {
+	width: 32%;
+	min-height: 10px;
+	float: left;
+	text-align: left; /*DUKE text-align: center;*/
+	margin-right: 1%;
+}
+.sez_order .cl3-3 {
+	width: 33%;
+	min-height: 10px;
+	float: left;
+}
+/* ORDER END */
+
+/* ORDER START */
+.sez_contact {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+.sez_contact .contact {
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+	min-height: 200px;
+	background-color: #000;
+	box-shadow: inset 0 -2px 0 0 #cccccc;
+}
+.sez_contact .form {
+	color: #fff;
+	font-size: 14px;
+	margin: 20px auto;
+}
+.sez_contact .form .row {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.sez_contact .cl1-1 {
+	width: 100%;
+	min-height: 10px;
+	float: left;
+}
+.sez_contact .cl1-2 {
+	width: 49%;
+	min-height: 10px;
+	float: left;
+	margin-right: 1%;
+}
+.sez_contact .cl2-2 {
+	width: 49%;
+	min-height: 10px;
+	float: left;
+	margin-left: 1%;
+}
+
+div.wrapper.blackBg {background-color:#000}
+
+/* CONTACT END */
+
+
+@media (max-width: 1200px) {
+.page {
+	max-width: 970px;
+}
+.breadcrumbs {
+	max-width: 970px;
+}
+}
+@media (max-width: 768px) {
+/*duke*/	
+div#lang-cont {	top: 25px; position: relative; }
+p.ui-dropdown-list-trigger { margin-top: -30px; }
+
+.sez_footer .cont {
+	height: auto;
+}
+.sez_footer .cc_payment, .sez_footer .app_icons {
+	width: auto !important;
+}
+
+.header .menu {
+	position: absolute; 
+}	
+	
+.page {
+	max-width: 750px;
+}
+.breadcrumbs {
+	max-width: 750px;
+}
+
+/* duke */
+.privacy-banner {
+      padding: 1.5rem .5rem;
+    }
+    .privacy-banner a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+}
+@media (max-width: 719px) {
+/* duke */	
+div#lang-cont {	top: 25px; position: relative; }
+p.ui-dropdown-list-trigger { margin-top: -30px; }
+
+.sez_footer .cont {
+	height: auto;
+}
+.sez_footer .cc_payment, .sez_footer .app_icons {
+	width: auto !important;
+}
+
+.header .menu {
+	position: absolute; 
+}
+
+.first {
+	margin-top: 30px;
+}
+a.btn {
+	width: 100%;
+	margin-top: 10px;
+}
+a.btn2 {
+	float: none;
+	margin: 10px auto 5px;
+}
+.header {
+	height: 300px;
+	overflow: visible;
+}
+.header.small {
+	height: 300px;
+	overflow: visible;
+}
+.header .hero-text {
+	font-size: 14px;
+	width: 95%;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+}
+.header .hero-text p {
+	margin-top: 0;
+}
+.header .hero-text br {
+	display: none;
+}
+.header .hero-text h1 {
+	font-size: 34px;
+	margin-bottom: 0;
+	margin-top: 62px;
+}
+.header .menu-cont {
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #333;
+}
+.header .menu-cont a.logo {
+	width: 50%;
+	position: relative;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #333;
+}
+.header .menu-cont a.icon-nav {
+	display: block;
+}
+span.icon-burger {
+	position: absolute;
+	width: 18px;
+	height: 12px;
+	right: 12px;
+	top: 36px; /*26*/
+	background: url(//www.transfermilan.com/img/burger.svg) no-repeat;
+}
+.header .menu-cont .menu-info {
+	float: none;
+	clear: both;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: rgba(221, 221, 221, 0.28);
+}
+.header .menu-cont .menu-info .navbar {
+	display: none;
+}
+.header .menu-info .contact-det {
+	float: left;
+}
+.sez_booking.first .booking {
+	background-image: none;
+	background-color: #000;
+}
+form#bookingForm img.revert  {
+	padding: 10px 0 !important;
+}
+.sez_booking .cl1,  .sez_booking .cl2,  .sez_booking .cl3,  .sez_booking .cl4 {
+	width: 100%;
+	min-height: 10px;
+	float: none;
+}
+.sez_booking .booking {
+	box-shadow: none;
+	background-image: none;
+	background-color: #000;
+}
+.sez_booking .table {
+	width: 100%;
+}
+.sez_booking .table .row:last-child {
+	border-bottom: 1px solid #ccc;
+}
+.sez_booking .table .row .cell {
+	border-top: 1px solid #ccc;
+	float: none;
+	border-left: none;
+}
+.sez_booking .table .row .cell:first-child {
+	border-top: none;
+	border-left: none;
+}
+.sez_booking .table .row .cl1,  .sez_booking .table .row .cl2,  .sez_booking .table .row .cl3,  .sez_booking .table .row .cl4 {
+	width: 100%;
+	text-align: center;
+}
+.sez_fleet ul {
+	padding: 0 10px;
+}
+.sez_fleet ul li {
+	width: 100%;
+	_float: none;
+	margin-right: 0;
+}
+.sez_comments ul {
+	padding: 0;
+}
+.sez_comments ul li {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+}
+.sez_services ul {
+	padding: 0;
+}
+.sez_services ul li {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+}
+.sez_carcategory ul {
+	padding: 0
+}
+.sez_carcategory ul li {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+}
+.sez_contact .cl1-2,  .sez_contact .cl2-2 {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 10px;
+	text-align: left;
+}
+.sez_order .order {
+	box-shadow: none;
+	background-image: none;
+	background-color: #000;
+}
+.sez_order .cl1-4,  .sez_order .cl2-4,  .sez_order .cl3-4,  .sez_order .cl4-4,  .sez_order .cl1-2,  .sez_order .cl2-2,  .sez_order .cl1-3,  .sez_order .cl2-3,  .sez_order .cl3-3 {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 10px;
+	text-align: left;
+}
+.sez_footer .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+.sez_footer .left,  .sez_footer .right {
+	width: 100%;
+	float: none;
+	text-align: center;
+	margin: 5px auto;
+}
+.sez_footer .right {
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+}
+@media (max-width: 450px) {
+/*duke*/	
+div#lang-cont {	top: 25px; position: relative; }
+p.ui-dropdown-list-trigger { margin-top: -30px; }
+
+.sez_footer .cont {
+	height: auto;
+}
+.sez_footer .cc_payment, .sez_footer .app_icons {
+	width: auto !important;
+}
+
+.header .menu {
+	position: absolute; 
+}
+.sez_footer .cont { width: 100%; margin-bottom: 10px;}
+.first { margin-top: 0px;}
+.sez_footer a.menu,  .sez_footer a.menu:hover {float: none;width: 100%;padding: 8px 4px;}
+.header .menu-info .contact-det ul li a {font-size: 22px;color: #fff;padding: 0 0 0 8px;} /*padding: 0 17px 0 8px;*/
+.header .menu-info .contact-det ul {margin: 4px 0 0 0px;float: left;width: 176px;}
+.header .menu-info .social-det ul li a img {width: 24px;height: 24px;}
+.header .menu-info .social-det ul {width: 104px;}
+.header .menu-info .social-det {margin-right: -10px;}
+.sez_order {margin-bottom: -2px;}
+}
+
+/*duke add 13-10-2024 ski page update*/
+div.info_order {color:#FFF}
+strong.selBlack {color:#000}
+p.ski_sea_banner{border: #5abbff solid 1px;margin: 10px 30px;padding: 20px;background: #b3d9ff;border-radius: 35px;}
+a.ski_sea_link{color:#000; text-decoration:underline}
+img.inText{border: 1px solid #b9e2ff;border-radius: 10px;}
+/*duke add 13-10-2024 ski page update:END*/
