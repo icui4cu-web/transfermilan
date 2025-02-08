@@ -10,7 +10,7 @@ const all_lazy = () => {
 
 window.addEventListener("load", all_lazy, { once: true });
 
-const images = document.querySelectorAll("img");
+const images = document.querySelectorAll("img[data-src]");
 const options = {
   root: null,
   rootMargin: "0px",
